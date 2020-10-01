@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+p {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.menu-aldi {
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+svg {
+    height: 50px;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-text h1 {
+    font-size: 20rem;
+    color: black;
+    padding: 1rem;
+}
+
+.header-text h6 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+/*header*/
+
+
+/*about*/
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-title {
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+}
+
+.about-title h1 {
+    font-size: 10rem;
+    opacity: .3;
+}
+
+.profile-picture {
+    flex: 1;
+    margin-right: 5rem;
+}
+
+.about-details {
+    flex: 1;
+}
+
+
+/*about*/
+
+
+/*footer*/
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.copyright p {
+    font-size: 1.4rem;
+}
+
+
+/*footer*/
+
+@media screen and (max-width: 760px) {
+    .header-text h1 {
+        font-size: 15rem;
+    }
+    .header-text h6 {
+        font-size: 1.7rem;
+    }
+    .about-title h1 {
+        font-size: 8rem;
+    }
+    .section-heading h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-text h1 {
+        font-size: 8rem;
+    }
+    .header-text h6 {
+        font-size: 1.4rem;
+    }
+    .about .container {
+        flex-direction: column;
+    }
+    .profile-img {
+        margin: 0 0 7rem 0;
+    }
+    .up {
+        right: 2rem;
+    }
+}
